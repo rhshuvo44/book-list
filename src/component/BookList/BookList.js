@@ -16,7 +16,7 @@ const BookList = () => {
         setCart(newCart);
       };
       const chooseBtn =()=>{
-        console.log("g");
+        setCart()
         
       }
       const reset=()=>{
