@@ -15,6 +15,12 @@ const BookList = () => {
     const newCart = [...cart, bookLists];
     setCart(newCart);
   };
+  const chooseBtn=()=>{
+    let choose = []
+    const ran = Math.floor(Math.random() * cart.length);
+    choose.push(cart[ran]);
+    setCart(choose);
+  }
   const reset = () => {
     setCart([]);
   };
@@ -34,7 +40,7 @@ const BookList = () => {
         </div>
         <div className="select-list">
           <Cart cart={cart}></Cart>
-          <button className="for-me-btn">
+          <button onClick={chooseBtn} className="for-me-btn">
             choose for 1 me
           </button>
           <button onClick={reset} className="for-me-btn">
