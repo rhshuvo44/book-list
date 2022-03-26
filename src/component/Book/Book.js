@@ -4,7 +4,6 @@ import React from 'react';
 import './Book.css';
 
 const Book = (props) => {
-    console.log(props);
     const { image, name, price, } = props.bookList;
     return (
         <div>

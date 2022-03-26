@@ -1,9 +1,10 @@
 import React from "react";
+import './Question.css';
 
 const Question = () => {
   return (
     <div className="question">
-      <h1>Question</h1>
+      <h1>Question and Answer</h1>
       <h3>How useState work</h3>
       <p>
         useState() হল একটি বিল্ট-ইন রিঅ্যাক্ট হুক যা কার্যকরী
